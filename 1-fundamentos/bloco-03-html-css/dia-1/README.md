@@ -1,5 +1,6 @@
 Para fixar - <strong> Primeira parte</strong> <br>
 
+Arquivo index.html
 
 <ol>
 <li>Crie uma lista das pessoas que você já fez amizade na Trybe.</li>
