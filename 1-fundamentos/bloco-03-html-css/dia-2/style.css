@@ -1,0 +1,41 @@
+h1{
+    size: 65px;
+    font-family: sans-serif;
+    color: orange;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.p-e-ul{background-color:lightblue;
+}
+p{font-weight: 600;
+font-size: 3em;
+text-align: center;
+}
+body{
+   font-size: 16px;
+   background-color:lightcyan;
+   line-height: 70px;
+   
+}
+#amarelo{background-color: yellow;
+font-weight: bold;
+font-style: italic;
+line-height: 30px;
+font-size: 20px;
+
+
+}
+#marrom{background-color: brown;
+font-weight: bold;
+font-style: italic;
+line-height: 30px;
+font-size: 20px;
+}
+#vermelho{background-color: red;
+font-weight: bold;
+font-style: italic;
+line-height: 30px;
+font-size: 20px;
+}
+
