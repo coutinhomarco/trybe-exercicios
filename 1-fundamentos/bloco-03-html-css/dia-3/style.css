@@ -1,3 +1,38 @@
+/* primeiro exercicio */
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+  .padding {
+      padding: 20px;
+
+  
+  }
+  
+  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+  .margin {
+      margin: 30px;
+  
+  }
+  
+  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+  .border {
+      border: 5px solid black;
+    
+  }
+
+
+/* -----------segundo exercicio----------- */
 .super-mario {
     width: 200px;
     position: absolute;
@@ -38,3 +73,47 @@
     top: 12%;
 
   }
+
+  /*----------------- terceiro exercicio---------------- */
+
+  .trybe{
+      color: #2fc18c
+  }
+  h1, p{
+      text-align: center;
+  }
+  ol :hover{
+      background-color: lightgray;
+  }
+  ol :active{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  ul :hover{
+    background-color: lightgray;
+  }
+  ul :active{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*---------------- quarto exercicio -------------*/
+div :hover{
+    border: 1px solid black;
+}
+div:nth-of-type(1){
+    background-color: red;
+}
+div:nth-of-type(2){
+    background-color: orange;
+}
+div:nth-of-type(3){
+    background-color: green;
+    height: 2em;
+}
+div:nth-of-type(4){
+    background-color: grey;
+}
+div:nth-of-type(5){
+    background-color: lightsteelblue;
+}
+div:nth-of-type(2n+1){
+    font-style: italic;
+}
