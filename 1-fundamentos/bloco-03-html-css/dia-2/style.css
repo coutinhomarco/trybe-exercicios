@@ -6,7 +6,8 @@ h1{
     text-decoration: underline;
 
 }
-.p-e-ul{background-color:lightblue;
+.p-e-ul{
+    background-color:lightblue;
 }
 p{font-weight: 600;
 font-size: 3em;
@@ -18,24 +19,18 @@ body{
    line-height: 70px;
    
 }
-#amarelo{background-color: yellow;
-font-weight: bold;
-font-style: italic;
-line-height: 30px;
-font-size: 20px;
-
-
+#amarelo{
+    background-color: yellow;
 }
-#marrom{background-color: brown;
-font-weight: bold;
-font-style: italic;
-line-height: 30px;
-font-size: 20px;
+#marrom{
+    background-color: brown;
 }
-#vermelho{background-color: red;
-font-weight: bold;
-font-style: italic;
-line-height: 30px;
-font-size: 20px;
+#vermelho{
+    background-color: red;
 }
-
+.itens-lista{
+    font-weight: bold;
+    font-style: italic;
+    line-height: 30px;
+    font-size: 20px;
+}
