@@ -1,4 +1,4 @@
-let notaAluno = 60;
+let notaAluno = 59;
 if (notaAluno>=80) {
     console.log("Parabéns, você foi aprovada(o)!")
 }
