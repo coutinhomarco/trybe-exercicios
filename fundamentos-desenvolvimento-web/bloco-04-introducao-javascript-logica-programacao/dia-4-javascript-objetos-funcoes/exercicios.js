@@ -84,7 +84,6 @@ function indexMenor(vetor) {
 }
 console.log(indexMenor(vetor));
 
-
 //4-Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 
 let vetor = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
@@ -102,3 +101,49 @@ function maiorPalavra(vetor) {
     return maior
 }
 console.log(maiorPalavra(vetor));
+
+//5-Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+let vetor = [2, 3, 2, 5, 8, 2, 3]
+contagem = {}
+function contadorNumero(vetor) {
+    let maior = -2
+    for (key in vetor) {
+        count = 0
+        for (number of vetor){
+            if(vetor[key] === number){
+                count+=1
+                contagem[vetor[key]] = count
+            }
+        }       
+    }
+    return contagem
+}
+contagem = contadorNumero(vetor)
+let maior = 0
+function escolheMaior(contagem) {
+    for (key in contagem) {
+        
+        if (contagem[key]>maior) {
+            maior = key
+        }
+    }
+    return maior
+}
+console.log(escolheMaior(contagem));
+
+// for (key in contagem) {
+//     console.log(key)
+// }
+
+
+//6-Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+
+function somatorioN(N){
+    let somatorio = 0
+    for (let index = 1; index<=N;index+=1) {
+        somatorio += index
+    }
+    return somatorio
+}
+console.log(somatorioN(5))
