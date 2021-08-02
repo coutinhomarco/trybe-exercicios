@@ -1,54 +1,104 @@
-// let name = 'Marta';
-// let lastName = 'Silva';
-// let age = 34;
-// let medals = { golden: 2, silver: 3 };
+/////////////////////////////////////////////////////////////
+//Parte I - Objetos e For/In
 
-let player = {
-    name: 'Marta',
-    lastName: 'Silva',
-    age: 34,
-    medals: { 
-        golden: 2, silver: 3 }
-}
-//Adicione ao objeto a chave bestInTheWorld e atribua a esta chave um array contendo as datas em que a jogadora Marta foi considerada a melhor do mundo.
-player["bestInTheWorld"] = [2006, 2007, 2008, 2009, 2010, 2018]
-console.log(player.bestInTheWorld);
-//Acesse as chaves name , lastName e age e concatene as suas informações para imprimir no console uma mensagem no seguinte formato: "A jogadora Marta Silva tem 34 anos de idade".
-console.log( "A jogadora "+ player.name +' '+player.lastName +" tem " +player.age+ " anos de idade")
-
-
-//Acesse a chave bestInTheWorld e faça um console.log no seguinte formato: "A jogadora Marta Silva foi eleita a melhor do mundo por 6 vezes".
-let count = 0
-for (let titulo of player.bestInTheWorld) {
-    count += 1
-}
-console.log("A jogadora " +player.name +' '+player.lastName +" foi eleita a melhor do mundo por "+ count +" vezes")
-
-//Acesse a chave medals e faça um console.log no seguinte formato: "A jogadora possui 2 medalhas de ouro e 3 medalhas de prata".
-console.log("A jogadora possui " +player.medals.golden+" medalhas de ouro e "+ player.medals.silver +" medalhas de prata.")
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-////////////FOR-IN
-
-// Usando o objeto abaixo, utilize For/in e imprima no console a mensagem 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
-let names = {
-    person1: 'João',
-    person2: 'Maria',
-    person3: 'Jorge' 
-  };
-for (let index in names) {
-    console.log('Olá ' + names[index] );
-}
-  
-
-//Usando o objeto abaixo, utilize For/in e imprima um console.log com as chaves e valores desse objeto.
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
 
-for (let key in car) {
-    console.log(key, car[key]);
+//1-Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome. Valor esperado no console: 
+//Bem-vinda, Margarida
+
+console.log('Bem-vinda, '+ info.personagem)
+
+//2-Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e,
+// em seguida, imprima o objeto no console. Valor esperado no console:
+
+info.recorrente = 'Sim'
+
+console.log(info);
+
+//3-Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+//personagem
+//origem
+//nota
+//recorrente
+
+for (let index in info) {
+    console.log(index);
 }
+
+//4-Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto.
+
+for (let index in info) {
+    console.log(info[index]);
+}
+
+/////////////////////////////////////////////////////////////
+
+//Parte II - Funções
+
+//1-Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+
+function verificaPalindrome(str) {
+    separaString =  str.split("")
+    reverteString = separaString.reverse()
+    juntaString = reverteString.join("")
+    if (juntaString === str) {
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(verificaPalindrome('adedanha'))
+
+
+//2-Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+let vetor = [2, 3, 6, 7, 10, 1];
+function indexMaior(vetor) {
+    let biggest = -100;
+    for (let number of vetor) {
+        if (number > biggest) {
+            biggest = number
+        }
+    }
+    return vetor.indexOf(biggest)
+}
+console.log(indexMaior(vetor));
+
+//3-Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+let vetor = [2, 4, 6, 7, 10, 0, -3];
+function indexMenor(vetor) {
+    let smallest = 10000;
+    for (let number of vetor) {
+        if (number<smallest) {
+            smallest=number
+        }
+    }
+    return vetor.indexOf(smallest)
+}
+console.log(indexMenor(vetor));
+
+
+//4-Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+let vetor = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+function maiorPalavra(vetor) {
+    let maior = '' 
+    for (nome of vetor) {
+        count = 0
+        for (caracter of nome) {
+            count += 1
+            if (count > maior.length) {
+                maior = nome
+            }                     
+        }
+    }
+    return maior
+}
+console.log(maiorPalavra(vetor));

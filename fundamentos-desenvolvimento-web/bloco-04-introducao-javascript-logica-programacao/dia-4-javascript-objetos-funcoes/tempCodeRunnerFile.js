@@ -1,9 +1,15 @@
-let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
-
-for (let key in car) {
-    console.log(key, car(key));
+let vetor = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+function maiorPalavra(vetor) {
+    let maior = '' 
+    for (nome of vetor) {
+        count = 0
+        for (caracter of nome) {
+            count += 1
+            if (count > maior.length) {
+                maior = nome
+            }                     
+        }
+    }
+    return maior
 }
+console.log(maiorPalavra(vetor));
