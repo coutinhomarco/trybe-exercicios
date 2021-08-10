@@ -25,6 +25,22 @@
 				document.querySelector("#pai").children;
 				document.querySelector("#elementoOndeVoceEsta").previousElementSibling;
 				document.querySelector("#elementoOndeVoceEsta").parentElement.innerText
+				//Crie um irmão para elementoOndeVoceEsta .
+				let pai = document.querySelector("#elementoOndeVoceEsta").parentElement
+				let irmao = document.createElement("section")
+				pai.appendChild(irmao)
+				//Crie um filho para elementoOndeVoceEsta .			
+				let ondeVoceEsta = document.querySelector("#elementoOndeVoceEsta")
+				let filhoOndeVoceEsta = document.createElement("section")
+				ondeVoceEsta.appendChild(filhoOndeVoceEsta)
+				//Crie um filho para primeiroFilhoDoFilho .
+				let filhoDoFilho = document.querySelector("#primeiroFilhoDoFilho")
+				let filhoDoFilhoDoFilho = document.createElement("section")
+				filhoDoFilhoDoFilho.id = "filhoDoFilhoDoFilho"
+				filhoDoFilho.appendChild(filhoDoFilhoDoFilho)
+				//A partir desse filho criado, acesse terceiroFilho .
+				let terceiroFilho = document.querySelector("#filhoDoFilhoDoFilho").parentElement.parentElement.nextElementSibling;
+				console.log(terceiroFilho);
 			</script>
 </body>
 </html>
