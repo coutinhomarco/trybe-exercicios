@@ -68,3 +68,11 @@ body {
   .tech {
     transform: translateY(-20px);
   }
+  
+  h3 {
+    text-align: center;
+  }
+
+  input {
+    margin: auto;
+  }
