@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="./node_modules/just-validate/"></script>
+</head>
+<body>
+    <h1 class="text-center">Currículo</h1>
+    <main>
+      <section class="container">
+        <form action="" class="js-form form">
+              <div class="nome mb-3">
+                <label for="name">Seu nome:</label>
+              <input data-validate-field='name' type="text" name="name" id="name" maxlength="40" required class="form-label">
+              </div>
+
+              <div class="email mb-3">
+                <label for="email">Seu email:</label>
+              <input type="email" name="email" id="email" required maxlength="50" class="form-label">
+              </div>
+
+              <div class="cpf mb-3">
+                <label for="cpf">Seu CPF:</label>
+              <input type="text" name="cpf" id="cpf" required maxlength="11" class="form-label">
+              </div>
+
+              <div class="endereco mb-3">
+                <label for="endereco">Seu endereço:</label>
+                <input type="text" name="endereco" id="endereco" required maxlength="200" class="form-label">
+              </div>
+              
+              <div class="cidade mb-3">
+                <label for="cidade">Sua cidade:</label>
+              <input type="text" name="cidade" id="cidade" required maxlength="28" class="form-label">
+              </div>
+
+              <div class="estado mb-3">
+                <label for="estado">Seu estado:</label>
+              <select name="estado" id="estado" required class="form-select">
+                <option value="ac">Acre</option> 
+                <option value="al">Alagoas</option> 
+                <option value="am">Amazonas</option> 
+                <option value="ap">Amapá</option> 
+                <option value="ba">Bahia</option> 
+                <option value="ce">Ceará</option> 
+                <option value="df">Distrito Federal</option> 
+                <option value="es">Espírito Santo</option> 
+                <option value="go">Goiás</option> 
+                <option value="ma">Maranhão</option> 
+                <option value="mt">Mato Grosso</option> 
+                <option value="ms">Mato Grosso do Sul</option> 
+                <option value="mg">Minas Gerais</option> 
+                <option value="pa">Pará</option> 
+                <option value="pb">Paraíba</option> 
+                <option value="pr">Paraná</option> 
+                <option value="pe">Pernambuco</option> 
+                <option value="pi">Piauí</option> 
+                <option value="rj">Rio de Janeiro</option> 
+                <option value="rn">Rio Grande do Norte</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rs">Rio Grande do Sul</option> 
+                <option value="rr">Roraima</option> 
+                <option value="sc">Santa Catarina</option> 
+                <option value="se">Sergipe</option> 
+                <option value="sp">São Paulo</option> 
+                <option value="to">Tocantins</option>
+              </select>
+              </div>              
+             <div class="tipo mb-3">
+                <label for="casa">Tipo:</label>
+                <div class="casa">
+                  <input type="radio" name="tipo" id="casa" required class="form-check-input">
+                <label for="casa" >Casa</label>
+                </div>
+                <input type="radio" name="tipo" id="apartamento" required class="form-check-input">
+                <label for="apartamento" class="form-check-label">Apartamento</label>
+              </div>
+        
+       
+          <div class="resumo mb-3">
+            <label for="resumo">Resumo</label>
+          <textarea required name="resumo" id="resumo"  maxlength="1000" class="form-label"></textarea>
+          </div>
+          <div class="cargo mb-3">
+            <label for="cargo">Cargo</label>
+          <input type="text" name="cargo" id="cargo" class="form-label">
+          </div>
+          <div class="resumocargo mb-3">
+            <label for="decripcargo">Descrição do cargo</label>
+          <input type="text" name="decripcargo" id="decripcargo" class="form-label">
+          </div>
+          <div class="data mb-3">
+            <label for="data">Data de início</label>
+          <input type="date" name="data" id="data" class="form-label">
+          </div>
+        
+        <button class="btn btn-success" id="valida">Valida</button>
+        <button class="btn btn-danger" type="reset">Limpar</button>
+      </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
