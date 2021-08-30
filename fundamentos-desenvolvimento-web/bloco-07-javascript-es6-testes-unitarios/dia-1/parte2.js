@@ -1,5 +1,5 @@
 //Crie uma função que receba um número e retorne seu fatorial.
-function fatorial(n) {
+const factorial = (n) => {
     let fat = 1
     if (n > 0) {
         for (let index = n; index > 0 ; index = index - 1) {
@@ -8,7 +8,7 @@ function fatorial(n) {
     }
     return fat
 }
-console.log(fatorial(5));
+console.log(factorial(5));
 
 //Crie uma função que receba uma frase e retorne qual a maior palavra.
 
@@ -20,11 +20,9 @@ const longestWord = (string) => {
         for (carac of palavra) {
             count += 1
         }
-        if (maior < count) {
-            maior = count
-            am = palavra
-        }
+        maior < count ? (maior = count, am = palavra) : 0
     }
     return console.log(palavra);
 }
 longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
+
