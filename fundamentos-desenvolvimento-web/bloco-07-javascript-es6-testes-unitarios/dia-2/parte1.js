@@ -1,5 +1,5 @@
 const order = {
-    name: 'Rafael Andrade',
+    name: 'Luiz Silva',
     phoneNumber: '11-98763-1416',
     address: {
       street: 'Rua das Flores',
@@ -30,7 +30,7 @@ const order = {
       }
     },
     payment: {
-      total: 60,
+      total: 50,
     },
   };
   
@@ -40,3 +40,10 @@ const order = {
 
  customerInfo(order);;
   
+
+ //"Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00."
+
+ const orderModifier = (order) => `Olá ${order.name}, o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order.order.drinks.coke.type} é R$ ${order.payment.total}`
+
+
+ orderModifier(order);
