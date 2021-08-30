@@ -25,4 +25,3 @@ const longestWord = (string) => {
     return console.log(palavra);
 }
 longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
-
