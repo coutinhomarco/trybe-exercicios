@@ -42,8 +42,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-6: _[Projeto - Arte com Pixels](https://coutinhomarco.github.io/projetos/pixels-art/index.html)_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
-
+- [X] 5-7: _[Projeto - Lista de tarefas](https://coutinhomarco.github.io/projetos/to-do-list/index.html)_
 ##### Bloco 6: HTML & CSS avançado
 
 - [X] 6-1: _HTML & CSS - Forms_
@@ -51,7 +50,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
 - [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Página Trybewarts]()_
+- [X] 6-6: _[Projeto - Página Trybewarts]((https://coutinhomarco.github.io/projetos/tybewarts/index.html)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
