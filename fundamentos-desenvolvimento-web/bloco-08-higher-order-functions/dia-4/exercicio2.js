@@ -76,7 +76,7 @@ function reduceNames() {
     return `${acumulador}, ${livro.author.name}`
 }
 ,'');
-  return objects.trim()
+  return objects
 }
 
 assert.strictEqual(reduceNames(), expectedResult);
