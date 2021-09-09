@@ -1,5 +1,3 @@
-// 1 - Dada uma matriz, transforme em um array.
-
 const assert = require('assert');
 
 const arrays = [
@@ -7,6 +5,8 @@ const arrays = [
   [true],
   [4, 5, 6],
 ];
+
+// 1 - Dada uma matriz, transforme em um array.
 
 function flatten() {
   const callback = (acc, atual) => {
