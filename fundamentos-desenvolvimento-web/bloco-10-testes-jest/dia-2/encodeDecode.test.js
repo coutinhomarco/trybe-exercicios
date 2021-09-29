@@ -1,4 +1,4 @@
-const challenges = require('../src/challenges');
+const challenges = require('./encodeDecode');
 
 describe('9 - Crie uma função que Codifique e Decodifique', () => {
   it('Retorne uma string codificada quando a função encode for utilizada', () => {
@@ -14,4 +14,8 @@ describe('9 - Crie uma função que Codifique e Decodifique', () => {
     expect(challenges.decode('Th3s 3s 1n 2nc4d3ng t2st.')).toBe('This is an encoding test.');
     expect(challenges.decode('g4 Tryb2!')).toBe('go Trybe!');
   });
+  it('testa se encode e decode são funções', () => {
+      expect(typeof challenges.encode).toBe('function');
+      expect(typeof challenges.decode).toBe('function');
+  })
 });
